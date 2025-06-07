@@ -299,8 +299,7 @@ useEffect(() => {
           <Typography 
             variant="h5" 
             color="error" 
-            gutterBottom
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            gutterBottom            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 600 }}
           >
             Something went wrong
           </Typography>
@@ -321,12 +320,10 @@ useEffect(() => {
   }
 
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}>      <DashboardPaper>        <ProfileHeader>
-          <Typography            variant="h4" 
-            component="h1"
-            sx={{ 
+    <Container maxWidth="md" sx={{ py: 4 }}>      <DashboardPaper>        <ProfileHeader>          <Typography            variant="h4" 
+            component="h1"            sx={{ 
               fontFamily: '"Mont", sans-serif',
-              fontWeight: 500
+              fontWeight: 600
             }}
           >
             Your Natively Page
@@ -351,12 +348,10 @@ useEffect(() => {
             </Button>
           </Box>
         </ProfileHeader>          {profile && (
-          <Box mb={4}>
-            <Typography              variant="h6" 
-              gutterBottom
-              sx={{ 
+          <Box mb={4}>            <Typography              variant="h6" 
+              gutterBottom              sx={{ 
                 fontFamily: '"Mont", sans-serif',
-                fontWeight: 500
+                fontWeight: 600
               }}
             >
               Your shareable URL:
@@ -407,14 +402,12 @@ useEffect(() => {
             </Paper>
           </Box>
         )}
-        
-        <Divider sx={{ my: 3 }} />
-          <Typography 
-          variant="h5" 
+          <Divider sx={{ my: 3 }} />
+          <Typography          variant="h6" 
           component="h2" 
           gutterBottom          sx={{ 
             fontFamily: '"Mont", sans-serif',
-            fontWeight: 500
+            fontWeight: 600
           }}
         >
           Your Links
@@ -435,8 +428,7 @@ useEffect(() => {
           <Box>
             {links.map((link) => (              <LinkItem key={link.id} elevation={1}>                <Box sx={{ overflow: 'hidden', maxWidth: { xs: '100%', sm: '60%' } }}>                  <Typography 
                     variant="h6" 
-                    noWrap
-                    sx={{ 
+                    noWrap                    sx={{ 
                       fontFamily: '"Mont", sans-serif',
                       fontWeight: 500
                     }}

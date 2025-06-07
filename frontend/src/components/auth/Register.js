@@ -122,11 +122,10 @@ const Register = () => {
   return (
     <Container>
       <Fade in={true} timeout={800}>
-        <StyledPaper elevation={3}>
-          <Typography 
+        <StyledPaper elevation={3}>          <Typography 
             component="h1" 
             variant="h5"
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 600 }}
           >
             Sign Up
           </Typography>

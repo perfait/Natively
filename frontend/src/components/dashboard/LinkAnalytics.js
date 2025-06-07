@@ -97,9 +97,12 @@ const LinkAnalytics = ({ link, onClose }) => {  const [clickData, setClickData] 
   };
 
   return (
-    <AnalyticsPaper>
-      <Header>
-        <Typography variant="h5" component="h2">
+    <AnalyticsPaper>      <Header>
+        <Typography 
+          variant="h5" 
+          component="h2"
+          sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 600 }}
+        >
           Analytics for "{link.title}"
         </Typography>
         <Button variant="outlined" onClick={onClose}>
@@ -112,8 +115,7 @@ const LinkAnalytics = ({ link, onClose }) => {  const [clickData, setClickData] 
       <StatsBox>        <StatItem>
           <Typography 
             variant="h4" 
-            color="primary"
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            color="primary"            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 700 }}
           >
             {totalClicks}
           </Typography>
@@ -127,8 +129,7 @@ const LinkAnalytics = ({ link, onClose }) => {  const [clickData, setClickData] 
         </StatItem>        <StatItem>
           <Typography 
             variant="h4" 
-            color="secondary"
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            color="secondary"            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 700 }}
           >
             {getRecentClicks()}
           </Typography>
@@ -143,8 +144,7 @@ const LinkAnalytics = ({ link, onClose }) => {  const [clickData, setClickData] 
           <StatItem>
           <Typography 
             variant="h4" 
-            color="info.main"
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            color="info.main"            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 700 }}
           >
             {getAverageClicksPerDay()}
           </Typography>
@@ -159,8 +159,7 @@ const LinkAnalytics = ({ link, onClose }) => {  const [clickData, setClickData] 
       </StatsBox>
         <Box mt={4}>
         <Box mb={2} display="flex" justifyContent="space-between" alignItems="center">          <Typography 
-            variant="h6"
-            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+            variant="h6"            sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 600 }}
           >
             Click History
           </Typography>

@@ -72,11 +72,10 @@ const Login = () => {
     }
   };
   return (
-    <Container>
-      <StyledPaper elevation={3}>        <Typography 
+    <Container>      <StyledPaper elevation={3}>        <Typography 
           component="h1" 
           variant="h5"
-          sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+          sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 600 }}
         >
           Sign In
         </Typography>

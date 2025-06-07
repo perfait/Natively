@@ -36,9 +36,8 @@ const LinkButton = styled(Button)`
   margin-bottom: 16px;
   border-radius: 12px;
   text-transform: none;
-  transition: all 0.3s ease;
-  font-size: 18px;  font-family: 'Mont', sans-serif;
-  font-weight: 500;
+  transition: all 0.3s ease;  font-size: 18px;  font-family: 'Mont', sans-serif;
+  font-weight: 600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
   &:hover {
@@ -190,15 +189,14 @@ const PublicLinkPage = () => {  const { slug } = useParams();
             <Avatar>
               <Typography 
                 variant="h4" 
-                color="white"
-                sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+                color="white"                sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 700 }}
               >
                 {profile.user.username.charAt(0).toUpperCase()}
               </Typography>
             </Avatar>            <Typography 
               variant="h4" 
               gutterBottom
-              sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 500 }}
+              sx={{ fontFamily: '"Mont", sans-serif', fontWeight: 700 }}
             >
               @{profile.user.username}
             </Typography>

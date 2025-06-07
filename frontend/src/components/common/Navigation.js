@@ -61,7 +61,7 @@ const Navigation = () => {
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', py: 1 }}>          <Logo 
             variant="h5" 
             component="div" 
-            onClick={() => navigate(user ? '/dashboard' : '/')}
+            onClick={() => navigate(user ? '/home' : '/')}
           >
             Natively
           </Logo>
@@ -91,10 +91,9 @@ const Navigation = () => {
                 }}
                 open={Boolean(anchorEl)}
                 onClose={handleMenuClose}
-              >
-                {user ? (
+              >                {user ? (
                   [
-                    <MenuItem key="dashboard" onClick={() => { handleMenuClose(); navigate('/dashboard'); }}>
+                    <MenuItem key="dashboard" onClick={() => { handleMenuClose(); navigate('/home'); }}>
                       Dashboard
                     </MenuItem>,
                     <MenuItem key="logout" onClick={handleLogout}>
